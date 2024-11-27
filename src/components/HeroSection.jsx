@@ -50,9 +50,9 @@ const FeaturesSection = () => {
   );
 };
 
-// Component for each feature card
+
 const FeatureCard = ({ feature }) => {
-  // Using the useInView hook to detect when the feature card is in the viewport
+  
   const { ref, inView } = useInView({
     triggerOnce: true, 
     threshold: 0.1, 
@@ -60,7 +60,7 @@ const FeatureCard = ({ feature }) => {
 
   return (
     <div
-      ref={ref} // Attach ref to the element we want to observe
+      ref={ref} // 
       className={`p-6 bg-white rounded-lg shadow-lg transition-all duration-300 ${
         inView ? 'animate-slideInLeft opacity-100' : 'opacity-0'
       }`}
