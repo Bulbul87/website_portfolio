@@ -27,7 +27,7 @@ const ServiceSection = () => {
   ];
 
   return (
-    <div className="py-16 bg-gray-50">
+    <div  id="service"className="py-16 bg-gray-50">
       <div className="container mx-auto text-center">
         <h3 className="text-2xl text-pink-500 mb-6">Our Services</h3>
         <h2 className="text-5xl font-bold text-gray-900 mb-4 animate-pulse">What We Can Do For You</h2>
@@ -46,10 +46,10 @@ const ServiceSection = () => {
 
 // Component for each service card
 const ServiceCard = ({ service }) => {
-  // Using the useInView hook to detect when the service card is in the viewport
+  
   const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger animation once when the card enters the viewport
-    threshold: 0.1, // Trigger when 10% of the card is visible
+    triggerOnce: true, 
+    threshold: 0.1, e
   });
 
   return (

@@ -5,10 +5,10 @@ import { useInView } from 'react-intersection-observer';
 import logo from '../assets/about-1.png';
 
 const AboutUs = () => {
-  // Use Intersection Observer for each element you want to animate
+  
   const { ref: headingRef, inView: headingInView } = useInView({
-    triggerOnce: true, // To trigger the animation only once
-    threshold: 0.1,    // 10% of the element should be visible
+    triggerOnce: true, 
+    threshold: 0.1,    
   });
 
   const { ref: paragraphRef, inView: paragraphInView } = useInView({
@@ -22,7 +22,7 @@ const AboutUs = () => {
   });
 
   return (
-    <div className="flex flex-col items-center justify-center py-20 bg-white">
+    <div id='about' className="flex flex-col items-center justify-center py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap items-center">
           <div className="w-full md:w-1/2">

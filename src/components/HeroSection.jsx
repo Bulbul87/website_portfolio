@@ -28,7 +28,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="py-16 bg-white">
+    <div id='features' className="py-16 bg-white">
       <div className="container mx-auto text-center">
         <h3 className="text-2xl text-pink-500 mb-6">Our Feature</h3>
         <h2 className="text-5xl font-bold text-gray-900 mb-4 animate-pulse">Important Features For Email Marketing</h2>
@@ -54,8 +54,8 @@ const FeaturesSection = () => {
 const FeatureCard = ({ feature }) => {
   // Using the useInView hook to detect when the feature card is in the viewport
   const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger animation once when the card enters the viewport
-    threshold: 0.1, // Trigger when 10% of the card is visible
+    triggerOnce: true, 
+    threshold: 0.1, 
   });
 
   return (

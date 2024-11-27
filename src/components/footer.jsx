@@ -21,7 +21,7 @@ const Footer = () => {
   const { ref: bottomRef, inView: bottomInView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <footer className="bg-gray-100 py-10 px-5">
+    <footer id='contact' className="bg-gray-100 py-10 px-5">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         
         {/* Company Section */}

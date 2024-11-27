@@ -6,7 +6,7 @@ import './about.css'
 import './textleft.css'
 const LandingPage = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div id='test' className="min-h-screen bg-white">
       <section className="px-10 py-20">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2">
