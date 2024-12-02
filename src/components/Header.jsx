@@ -23,15 +23,15 @@ const HomePage = () => {
   });
 
   return (
-    <div>
-      <header className="bg-white shadow-sm fixed top-0 left-0 w-full z-50">
+    <div >
+      <header className="bg-white shadow-sm fixed top-0 left-0 w-full z-50 ">
         <div className="container mx-auto flex items-center justify-between p-4">
           <div className="flex items-center">
             <img src={Mailicon} alt="logo" className="w-10 h-10" />
             <div className="text-2xl font-bold text-pink-500 ml-2">Mailler</div>
           </div>
 
-          <nav className="hidden md:flex space-x-4">
+          <nav className="hidden md:flex space-x-4 scroll-smooth">
             <a
               href="#"
               className="text-gray-600 text-xl font-semibold hover:text-pink-500 p-2"
