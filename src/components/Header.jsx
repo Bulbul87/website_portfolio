@@ -31,7 +31,7 @@ const HomePage = () => {
             <div className="text-2xl font-bold text-pink-500 ml-2">Mailler</div>
           </div>
 
-          <nav className="hidden md:flex space-x-4 scroll-smooth">
+          <nav className="hidden md:flex space-x-4 ">
             <a
               href="#"
               className="text-gray-600 text-xl font-semibold hover:text-pink-500 p-2"
